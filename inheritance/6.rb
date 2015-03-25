@@ -30,9 +30,10 @@ class Vehicle
     Time.now.year - self.year
   end
 end
+
 module Carheight
   def car_height?(meter)
-    meter < 3000 ? true: false
+    meter < 3000 ? true:false
   end
 end
 
@@ -68,14 +69,7 @@ class MyTruck < Vehicle
 end
 
 
-
-
-
-
-Car1 = MyCar.new(1982,"black","fast")
-Car1.carage
+# Car1 = MyCar.new(1982,"black","fast")
+# Car1.carage
 Car2 = MyTruck.new()
-Car2.car_height(4000)
-
-
-
+puts Car2.car_height?(4000)
